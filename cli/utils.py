@@ -133,6 +133,12 @@ def select_shallow_thinking_agent(provider) -> str:
             ("GPT-4.1-mini - Compact model with good performance", "gpt-4.1-mini"),
             ("GPT-4o - Standard model with solid capabilities", "gpt-4o"),
         ],
+        "dmxcn": [
+            ("GPT-4o-mini - Fast and efficient for quick tasks", "gpt-4o-mini"),
+            ("GPT-4.1-nano - Ultra-lightweight model for basic operations", "gpt-4.1-nano"),
+            ("GPT-4.1-mini - Compact model with good performance", "gpt-4.1-mini"),
+            ("GPT-4o - Standard model with solid capabilities", "gpt-4o"),
+        ],
         "anthropic": [
             ("Claude Haiku 3.5 - Fast inference and standard capabilities", "claude-3-5-haiku-latest"),
             ("Claude Sonnet 3.5 - Highly capable standard model", "claude-3-5-sonnet-latest"),
@@ -194,6 +200,15 @@ def select_deep_thinking_agent(provider) -> str:
             ("o3 - Full advanced reasoning model", "o3"),
             ("o1 - Premier reasoning and problem-solving model", "o1"),
         ],
+        "dmxcn": [
+            ("GPT-4.1-nano - Ultra-lightweight model for basic operations", "gpt-4.1-nano"),
+            ("GPT-4.1-mini - Compact model with good performance", "gpt-4.1-mini"),
+            ("GPT-4o - Standard model with solid capabilities", "gpt-4o"),
+            ("o4-mini - Specialized reasoning model (compact)", "o4-mini"),
+            ("o3-mini - Advanced reasoning model (lightweight)", "o3-mini"),
+            ("o3 - Full advanced reasoning model", "o3"),
+            ("o1 - Premier reasoning and problem-solving model", "o1"),
+        ],
         "anthropic": [
             ("Claude Haiku 3.5 - Fast inference and standard capabilities", "claude-3-5-haiku-latest"),
             ("Claude Sonnet 3.5 - Highly capable standard model", "claude-3-5-sonnet-latest"),
@@ -247,7 +262,8 @@ def select_llm_provider() -> tuple[str, str]:
         ("Anthropic", "https://api.anthropic.com/"),
         ("Google", "https://generativelanguage.googleapis.com/v1"),
         ("Openrouter", "https://openrouter.ai/api/v1"),
-        ("Ollama", "http://localhost:11434/v1"),        
+        ("DMXcn", "https://www.dmxapi.cn/v1"),
+        ("Ollama", "http://localhost:11434/v1"),
     ]
     
     choice = questionary.select(
