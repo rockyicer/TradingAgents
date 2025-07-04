@@ -25,6 +25,10 @@
 
 ---
 
+## A small Demo
+https://youtu.be/8z9dRcNdgUg
+
+
 # TradingAgents: Multi-Agents LLM Financial Trading Framework 
 
 > 🎉 **TradingAgents** officially released! We have received numerous inquiries about the work, and we would like to express our thanks for the enthusiasm in our community.
